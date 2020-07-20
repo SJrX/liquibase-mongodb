@@ -50,7 +50,6 @@ public class MongoLiquibaseDatabase extends AbstractJdbcDatabase {
     public static final String DATABASE_CHANGE_LOG_TABLE_NAME = "databaseChangeLog";
     public static final String DATABASE_CHANGE_LOG_LOCK_TABLE_NAME = "databaseChangeLogLock";
 
-    @Setter
     private String databaseChangeLogTableName;
 
     @Setter
@@ -58,6 +57,7 @@ public class MongoLiquibaseDatabase extends AbstractJdbcDatabase {
 
     @Setter
     private String liquibaseCatalogName;
+    
     private MongoConnection connection;
 
     public MongoLiquibaseDatabase() {
